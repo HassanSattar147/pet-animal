@@ -42,7 +42,7 @@
 }
 
 .active {
-  height: 18.5rem !important;
+  height: 21.5rem !important;
   padding: 1rem 0;
   width: 100%;
 }
@@ -149,6 +149,11 @@
     flex: 1 0 65%;
   }
 }
+@media (max-width: 751px) {
+  .nav__contents__right-menu .contact-number-desktop {
+    display: none;
+  }
+}
 .nav__contents__right-menu a {
   display: inline-block;
   align-self: center;
@@ -177,6 +182,12 @@
 }
 .nav__contents__right-menu .btn-pink:hover {
   color: #FFF;
+}
+
+@media (max-width: 751px) {
+  .contact-number-mobile {
+    display: block;
+  }
 }
 
 .main-screen {
@@ -406,6 +417,11 @@
   width: 3rem;
   margin-right: 0.8rem;
 }
+@media (max-width: 416px) {
+  .stats__block__contents .carousel-container .left-arrow {
+    margin-right: 0;
+  }
+}
 .stats__block__contents .carousel-container .left-arrow span {
   padding: 0.95rem 1rem;
   border-radius: 50%;
@@ -428,6 +444,11 @@
 .stats__block__contents .carousel-container .left-arrow span i {
   font-size: 1rem;
   color: #1E1F27;
+}
+@media (max-width: 416px) {
+  .stats__block__contents .carousel-container .left-arrow span {
+    padding: 0.5rem 0.5rem;
+  }
 }
 .stats__block__contents .carousel-container .carousel {
   width: calc(100% - 7.6rem);
@@ -452,8 +473,13 @@
 .stats__block__contents .carousel-container .carousel-slide:nth-child(4) {
   display: none;
 }
+@media (max-width: 416px) {
+  .stats__block__contents .carousel-container .carousel {
+    width: 100%;
+  }
+}
 .stats__block__contents .carousel-container .carousel-image {
-  min-width: 250px;
+  min-width: 200px;
   min-height: 250px;
   flex: 1;
   display: inline-block;
@@ -511,6 +537,13 @@
     height: 100%;
   }
 }
+@media (max-width: 416px) {
+  .stats__block__contents .carousel-container .carousel-image img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}
 .stats__block__contents .carousel-container .right-arrow {
   width: 3rem;
   margin-left: 0.8rem;
@@ -522,6 +555,11 @@
   display: inline-block;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media (max-width: 416px) {
+  .stats__block__contents .carousel-container .right-arrow span {
+    padding: 0.5rem 0.5rem;
+  }
 }
 .stats__block__contents .carousel-container .right-arrow span:hover {
   background-color: #F8DB46;
@@ -874,6 +912,11 @@
   font-size: 1.4rem;
   font-weight: 700;
   color: #FFF;
+}
+@media (max-width: 751px) {
+  .adopt__block .text .cta-text h5 {
+    text-align: center;
+  }
 }
 .adopt__block .text .cta-text .btns {
   width: 100%;
